@@ -20,7 +20,7 @@ RUN cd ruby-$RUBY_VERSION && ./configure && make && make install
 
 ### Install bundler
 RUN gem update --system
-RUN gem install bundler serverspec ansible_spec --no-rdoc --no-ri
+RUN gem install bundler serverspec infrataster ansible_spec --no-rdoc --no-ri
 
 EXPOSE 22
 
